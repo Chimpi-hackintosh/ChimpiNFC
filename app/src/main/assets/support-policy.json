@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "verified_at": "2026-11-01",
+  "ends_at": "2026-11-04T00:00:00Z",
+  "table": "https://chimpi-hackintosh.github.io/ChimpiBlender-Online/support.html",
+  "apps": {
+    "OpenCore-Helper": {
+      "name": "OpenCore Helper",
+      "repo": "OpenCore-Helper",
+      "minimum": "3.0.1",
+      "tag": "v3.0.1",
+      "preview": false,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/OpenCore-Helper/releases/tag/v3.0.1",
+      "status": "published"
+    },
+    "SnoopyOS-Lite": {
+      "name": "SnoopyOS Lite",
+      "repo": "SnoopyOS-Image",
+      "minimum": "0.1.3",
+      "tag": "v0.1-lite.3",
+      "preview": true,
+      "edition": "lite",
+      "url": "https://github.com/Chimpi-hackintosh/SnoopyOS-Image/releases/tag/v0.1-lite.3",
+      "status": "preview"
+    },
+    "SnoopyOS-Games": {
+      "name": "SnoopyOS Games",
+      "repo": "SnoopyOS-Image",
+      "minimum": "0.2.1",
+      "tag": "v0.2-games.1",
+      "preview": true,
+      "edition": "games",
+      "url": "https://github.com/Chimpi-hackintosh/SnoopyOS-Image/releases/tag/v0.2-games.1",
+      "status": "preview"
+    },
+    "ChimpiAI": {
+      "name": "ChimpiAI",
+      "repo": "ChimpiAI",
+      "minimum": "1.0.0",
+      "tag": "ChimpiAI-1.0.0-beta",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiAI/releases/tag/ChimpiAI-1.0.0-beta",
+      "status": "preview"
+    },
+    "WinSIMU": {
+      "name": "WinSIMU",
+      "repo": "WinSIMU",
+      "minimum": "0.1.0",
+      "tag": "v0.1.0-alpha",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/WinSIMU/releases/tag/v0.1.0-alpha",
+      "status": "preview"
+    },
+    "ChimpiCode": {
+      "name": "ChimpiCode",
+      "repo": "ChimpiCode",
+      "minimum": "1.1.0",
+      "tag": "v1.1.0-preview.3",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.3",
+      "status": "preview"
+    },
+    "ChimpiBridge": {
+      "name": "ChimpiBridge",
+      "repo": "ChimpiBridge",
+      "minimum": "0.1.1",
+      "tag": "v0.1.1",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiBridge/releases/tag/v0.1.1",
+      "status": "preview"
+    },
+    "ChimpiShare": {
+      "name": "ChimpiShare",
+      "repo": "ChimpiShare",
+      "minimum": "0.1.0",
+      "tag": "v0.1.0",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiShare/releases/tag/v0.1.0",
+      "status": "preview"
+    },
+    "ChimpiConstrucoes": {
+      "name": "ChimpiConstruções",
+      "repo": "ChimpiConstrucoes",
+      "minimum": null,
+      "tag": null,
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiConstrucoes",
+      "status": "source"
+    },
+    "ChimpiBlender-Online": {
+      "name": "ChimpiBlender Online",
+      "repo": "ChimpiBlender-Online",
+      "minimum": null,
+      "tag": null,
+      "preview": false,
+      "edition": null,
+      "url": "https://chimpi-hackintosh.github.io/ChimpiBlender-Online/",
+      "status": "website",
+      "web_revision": 20261101
+    },
+    "ChimpiNotch": {
+      "name": "ChimpiNotch",
+      "repo": "ChimpiNotch",
+      "minimum": "1.0.4",
+      "tag": "v1.0.4",
+      "preview": false,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiNotch/releases/tag/v1.0.4",
+      "status": "published"
+    },
+    "Chimpi3D-Installer": {
+      "name": "Chimpi3D",
+      "repo": "Chimpi3D-Installer",
+      "minimum": "0.3.1",
+      "tag": "v0.3.1-build-11",
+      "preview": false,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/Chimpi3D-Installer/releases/tag/v0.3.1-build-11",
+      "status": "published"
+    },
+    "ChimpiNFC": {
+      "name": "ChimpiNFC",
+      "repo": "ChimpiNFC",
+      "minimum": "0.1.0",
+      "tag": "v0.1.0-build-2",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiNFC/releases/tag/v0.1.0-build-2",
+      "status": "preview"
+    }
+  }
+}
