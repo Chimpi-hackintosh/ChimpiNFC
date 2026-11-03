@@ -2,6 +2,7 @@ name: Android • Compilar APK e publicar Release
 
 on:
   workflow_dispatch:
+  pull_request:
   push:
     branches: [main]
     paths:
@@ -64,6 +65,7 @@ jobs:
           if-no-files-found: error
 
       - name: Publicar APK em pré-Release
+        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v0.1.0-build-${{ github.run_number }}

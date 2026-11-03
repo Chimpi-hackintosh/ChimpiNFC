@@ -54,3 +54,7 @@ gradle --no-daemon :app:testDebugUnitTest :app:assembleDebug
 ## Licença
 
 MIT • Chimpi-hackintosh
+
+## Aviso de suporte
+
+Aviso traduzido, data de 04/11/2026, versões e limites de distribuição em [SUPPORT.md](SUPPORT.md)
