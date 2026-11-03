@@ -8,7 +8,7 @@ Antes dessa data o aviso informa que o suporte está prestes a terminar — depo
 
 O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já foi infectado
 
-| Aplicativo | Versão publicada conferida em 01/11/2026 | Mínima |
+| Aplicativo | Versão publicada conferida em 02/11/2026 | Mínima |
 | --- | --- | --- |
 | ChimpiNFC | v0.1.0-build-2 — prévia | 0.1.0 |
 
