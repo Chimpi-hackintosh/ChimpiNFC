@@ -20,8 +20,11 @@ class InputValidatorTest {
 
     @Test fun airtagPublicLinkDetectedPrecisely() {
         assertTrue(InputValidator.isPublicAirTagUrl("https://found.apple.com/airtag"))
+        assertTrue(InputValidator.isPublicAirTagUrl("https://FOUND.APPLE.COM/airtag"))
         assertFalse(InputValidator.isPublicAirTagUrl("http://found.apple.com/"))
         assertFalse(InputValidator.isPublicAirTagUrl("https://found.apple.com.attacker.net/"))
+        assertFalse(InputValidator.isPublicAirTagUrl("https://user@found.apple.com/airtag"))
+        assertFalse(InputValidator.isPublicAirTagUrl("https://found.apple.com:8443/airtag"))
     }
 
     @Test fun missingContentRejected() {
