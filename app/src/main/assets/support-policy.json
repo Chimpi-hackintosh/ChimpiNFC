@@ -63,13 +63,13 @@
     "ChimpiCode": {
       "name": "ChimpiCode",
       "repo": "ChimpiCode",
-      "minimum": "1.1.0-preview.12",
-      "tag": "v1.1.0-preview.12",
+      "minimum": "1.1.0-preview.15",
+      "tag": "v1.1.0-preview.15",
       "preview": true,
       "edition": null,
-      "url": "https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.12",
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.15",
       "status": "preview",
-      "artifact_digest": "sha256:b4232899ef1eaeebb119c1c19889e8611cb8629d7fdb136b268c35b6aa63ae15"
+      "artifact_digest": "sha256:6dfa2dae247b8c6a5212475ad4cda852f903faebf9e4eef1e4ce10b8d51e16c7"
     },
     "ChimpiBridge": {
       "name": "ChimpiBridge",
