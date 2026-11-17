@@ -35,6 +35,7 @@ class MainActivity : Activity(), NfcAdapter.ReaderCallback {
         types = findViewById(R.id.recordType)
         armButton = findViewById(R.id.armWriteButton)
         nfc = NfcAdapter.getDefaultAdapter(this)
+        SupportNotice.check(this)
         armButton.setOnClickListener { prepareWrite() }
         findViewById<Button>(R.id.cancelWriteButton).setOnClickListener {
             pending = null

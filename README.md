@@ -11,7 +11,7 @@ Aplicativo Android independente para **ler e gravar etiquetas NFC NDEF regraváv
 - **Modo seguro:** a gravação requer confirmação e vale só para a próxima etiqueta detectada
 - **AirTag:** reconhecimento de links oficiais públicos `https://found.apple.com/`, sem abrir automaticamente
 - **Sem localização, clonagem ou alteração de AirTags**
-- **GitHub Actions:** testa o projeto e gera um APK de depuração em um pré-Release
+- **GitHub Actions:** executa testes e gera um APK de depuração como artefato; a publicação de prévia é uma etapa manual separada
 
 ## Compatibilidade
 
@@ -22,11 +22,11 @@ Aplicativo Android independente para **ler e gravar etiquetas NFC NDEF regraváv
 
 ## Publicar APK pelo GitHub
 
-Acesse **Actions → Android • Compilar APK e publicar Release → Run workflow**, ou envie uma alteração de código para a branch `main`
+Acesse **Actions → Android • Testar e compilar APK → Run workflow**
 
-Quando o trabalho passar, entre em **Releases** e baixe `ChimpiNFC-Android-debug.apk`
+Por padrão, `publish_preview=false`: o workflow apenas testa, compila e guarda o APK como artefato do Actions. Pushes para `main` e pull requests também não publicam Releases
 
-O APK usa **assinatura de depuração para testes**, não uma assinatura de produção da Play Store
+A publicação em pré-Release só ocorre quando uma execução manual é iniciada com `publish_preview=true`, após solicitação explícita. O APK usa **assinatura de depuração para testes**, não uma assinatura de produção da Play Store
 
 ## Como usar
 
@@ -54,3 +54,7 @@ gradle --no-daemon :app:testDebugUnitTest :app:assembleDebug
 ## Licença
 
 MIT • Chimpi-hackintosh
+
+## Aviso de suporte
+
+Aviso traduzido, data de 04/11/2026, versões e limites de distribuição em [SUPPORT.md](SUPPORT.md)

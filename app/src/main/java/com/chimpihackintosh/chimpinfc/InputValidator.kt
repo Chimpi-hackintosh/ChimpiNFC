@@ -35,6 +35,7 @@ object InputValidator {
     fun isPublicAirTagUrl(raw: String): Boolean {
         val uri = try { URI(raw.trim()) } catch (_: Exception) { return false }
         return uri.scheme.equals("https", ignoreCase = true) &&
-            uri.host.equals("found.apple.com", ignoreCase = true)
+            uri.host.equals("found.apple.com", ignoreCase = true) &&
+            uri.userInfo == null && uri.port == -1
     }
 }

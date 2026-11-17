@@ -1,7 +1,14 @@
-name: Android • Compilar APK e publicar Release
+name: Android • Testar e compilar APK
 
 on:
   workflow_dispatch:
+    inputs:
+      publish_preview:
+        description: "Publicar uma prévia em Releases após a compilação — somente quando isso for solicitado"
+        required: true
+        type: boolean
+        default: false
+  pull_request:
   push:
     branches: [main]
     paths:
@@ -11,7 +18,7 @@ on:
       - '.github/workflows/android.yml'
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   android:
@@ -49,7 +56,7 @@ jobs:
       - name: Executar testes e gerar APK
         run: gradle --no-daemon :app:testDebugUnitTest :app:assembleDebug
 
-      - name: Preparar arquivos do Release
+      - name: Preparar arquivos do artefato
         run: |
           mkdir -p dist
           cp app/build/outputs/apk/debug/app-debug.apk dist/ChimpiNFC-Android-debug.apk
@@ -62,6 +69,19 @@ jobs:
           name: ChimpiNFC-Android-debug
           path: dist/
           if-no-files-found: error
+
+  publish-preview:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish_preview == true
+    needs: android
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Baixar artefato aprovado
+        uses: actions/download-artifact@v4
+        with:
+          name: ChimpiNFC-Android-debug
+          path: dist
 
       - name: Publicar APK em pré-Release
         uses: softprops/action-gh-release@v2
